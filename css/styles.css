@@ -194,6 +194,8 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   transition: opacity 0.45s ease, transform 0.45s ease;
+  position: relative;
+  z-index: 4;
 }
 
 .btn-row.fade-out {
@@ -244,6 +246,8 @@ button {
   color: var(--text);
   margin: 26px 0 18px;
   transition: opacity 0.45s ease, transform 0.45s ease;
+  position: relative;
+  z-index: 4;
 }
 
 .letter-ask.fade-out {
@@ -311,7 +315,7 @@ button {
   justify-content: center;
   padding: 18px;
   z-index: 3;
-  transform: translateY(64%);
+  transform: translateY(18%);
   transition: transform 0.95s cubic-bezier(0.25, 0.6, 0.25, 1) 0.5s;
 }
 
