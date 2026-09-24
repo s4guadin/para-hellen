@@ -46,7 +46,16 @@ window.CONTENT = {
     continueLabel: "CONTINUAR 💖",
     empty: "Em breve, nossas fotos vão aparecer aqui. 💌",
     photos: [
-      // { src: "assets/photos/foto1.jpg", caption: "uma legenda fofa aqui" }
+      { src: "assets/photos/foto-01.jpg", caption: "uma lembrancinha boa ❤️" },
+      { src: "assets/photos/foto-02.jpg", caption: "aquele momento nosso" },
+      { src: "assets/photos/foto-03.jpg", caption: "sorriso lindo 😊" },
+      { src: "assets/photos/foto-04.jpg", caption: "a gente sempre junto" },
+      { src: "assets/photos/foto-05.jpg", caption: "bom demais te ter" },
+      { src: "assets/photos/foto-06.jpg", caption: "de ti, sempre 💕" },
+      { src: "assets/photos/foto-07.jpg", caption: "uma das minhas favoritas" },
+      { src: "assets/photos/foto-08.jpg", caption: "melhor companhia" },
+      { src: "assets/photos/foto-09.jpg", caption: "meu cantinho feliz" },
+      { src: "assets/photos/foto-10.jpg", caption: "e tem muito mais por vir… ❤️" }
     ]
   },
 

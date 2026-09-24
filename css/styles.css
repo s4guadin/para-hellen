@@ -623,8 +623,9 @@ button {
 .polaroid-img {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
+  object-position: 50% 32%;
 }
 
 .polaroid-cap {
