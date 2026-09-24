@@ -69,7 +69,7 @@
     });
 
     document.getElementById('cardsNext').addEventListener('click', function () {
-      App.go('proposal');
+      App.go('album');
     });
   });
 })(window);

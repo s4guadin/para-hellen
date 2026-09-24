@@ -40,6 +40,16 @@ window.CONTENT = {
     continueLabel: "TENHO MAIS UMA COISINHA PARA VOCÊ 💌"
   },
 
+  album: {
+    title: "Nossos momentos ❤️",
+    lead: "Um álbum com um pedacinho da nossa história…",
+    continueLabel: "CONTINUAR 💖",
+    empty: "Em breve, nossas fotos vão aparecer aqui. 💌",
+    photos: [
+      // { src: "assets/photos/foto1.jpg", caption: "uma legenda fofa aqui" }
+    ]
+  },
+
   proposal: {
     greet: "Hellen, minha princesa... ❤️",
     lead: "Eu tenho uma última perguntinha para te fazer...",
