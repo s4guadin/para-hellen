@@ -1,7 +1,7 @@
 window.CONTENT = {
   letter: {
-    greeting: "Oi, minha princesa, preparei uma coisinha especial para você. ❤️",
-    question: "Você quer abrir sua cartinha?",
+    greeting: "Oi, minha princesa! ❤️",
+    question: "Você quer abrir a carta?",
     yes: "SIM ❤️",
     no: "NÃO 🙈",
     envelope: {
