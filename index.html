@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Uma cartinha especial feita com carinho para a minha princesa.">
+  <meta name="theme-color" content="#45194f">
+  <title>Para a minha princesa ❤️</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="bg-layers" aria-hidden="true">
+    <div class="stars" id="stars"></div>
+    <div class="hearts" id="heartsLayer"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <main class="stage" id="stage"></main>
+
+  <button class="music-btn" id="musicToggle" aria-label="Tocar música" aria-pressed="false" title="Tocar música">
+    <span class="music-icon">&#9835;</span>
+  </button>
+
+  <div class="bg-transition" id="bgTransition" aria-hidden="true"></div>
+
+  <noscript>
+    <div class="noscript-card">Ative o JavaScript para abrir sua cartinha. &#128150;</div>
+  </noscript>
+
+  <script src="js/content.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/stage-letter.js"></script>
+  <script src="js/stage-declaration.js"></script>
+  <script src="js/stage-cards.js"></script>
+  <script src="js/stage-proposal.js"></script>
+  <script src="js/init.js"></script>
+</body>
+</html>
