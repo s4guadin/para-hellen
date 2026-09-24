@@ -10,6 +10,10 @@
   App.register('proposal', function (stage) {
     stage.innerHTML =
       '<div class="stage-inner proposal-stage">' +
+        '<div class="ring-wrap" aria-hidden="true">' +
+          '<div class="ring"></div>' +
+          '<span class="ring-sparkle">✨</span>' +
+        '</div>' +
         '<p class="p-greet">' + C.greet + '</p>' +
         '<p class="p-lead">' + C.lead + '</p>' +
         '<p class="p-question">' + C.question + '</p>' +
@@ -20,7 +24,7 @@
       '</div>';
 
     var inner = stage.querySelector('.proposal-stage');
-    var boxes = inner.querySelectorAll('.p-greet, .p-lead, .p-question, .proposal-btns');
+    var boxes = inner.querySelectorAll('.ring-wrap, .p-greet, .p-lead, .p-question, .proposal-btns');
 
     if (FX.reduced) {
       boxes.forEach(function (b) {
