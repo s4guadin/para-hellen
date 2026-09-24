@@ -34,6 +34,20 @@
     });
   }
 
+  manager.boot = function (name) {
+    var builder = manager.stages[name];
+    if (!builder) {
+      throw new Error('Estagio desconhecido: ' + name);
+    }
+    if (manager.cleanup) {
+      try {
+        manager.cleanup();
+      } catch (e) {}
+      manager.cleanup = null;
+    }
+    manager.cleanup = builder(stage);
+  };
+
   manager.go = function (name) {
     var builder = manager.stages[name];
     if (!builder) {

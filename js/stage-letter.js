@@ -6,27 +6,38 @@
   var App = window.App;
 
   App.register('letter', function (stage) {
-    stage.innerHTML =
-      '<div class="stage-inner letter-stage">' +
-        '<p class="sub-inline">' + C.greeting + '</p>' +
-        '<div class="envelope" id="mainEnvelope" aria-hidden="true">' +
-          '<div class="env-back"></div>' +
-          '<div class="env-letter"><span class="env-letter-text">' + C.envelope.letterText + '</span></div>' +
-          '<div class="env-flap"></div>' +
-          '<div class="env-seal">\u2764</div>' +
-        '</div>' +
-        '<p class="letter-ask">' + C.question + '</p>' +
-        '<div class="btn-row" id="letterBtns">' +
-          '<button class="btn btn-primary" id="btnYes">' + C.yes + '</button>' +
-          '<button class="btn btn-ghost no-btn" id="btnNo">' + C.no + '</button>' +
-        '</div>' +
-      '</div>';
+    var container = stage.querySelector('.letter-stage');
+    if (!container) {
+      stage.innerHTML =
+        '<div class="stage-inner letter-stage">' +
+          '<p class="sub-inline"></p>' +
+          '<div class="envelope" id="mainEnvelope" aria-hidden="true">' +
+            '<div class="env-back"></div>' +
+            '<div class="env-letter"><span class="env-letter-text"></span></div>' +
+            '<div class="env-flap"></div>' +
+            '<div class="env-seal">\u2764</div>' +
+          '</div>' +
+          '<p class="letter-ask"></p>' +
+          '<div class="btn-row" id="letterBtns">' +
+            '<button class="btn btn-primary" id="btnYes"></button>' +
+            '<button class="btn btn-ghost no-btn" id="btnNo"></button>' +
+          '</div>' +
+        '</div>';
+      container = stage.querySelector('.letter-stage');
+    }
+
+    container.querySelector('.sub-inline').textContent = C.greeting;
+    container.querySelector('.env-letter-text').textContent = C.envelope.letterText;
+    container.querySelector('.letter-ask').textContent = C.question;
 
     var envelope = document.getElementById('mainEnvelope');
     var ask = stage.querySelector('.letter-ask');
     var btnRow = document.getElementById('letterBtns');
     var yesBtn = document.getElementById('btnYes');
     var noBtn = document.getElementById('btnNo');
+    yesBtn.textContent = C.yes;
+    noBtn.textContent = C.no;
+
     var inner = stage.querySelector('.letter-stage');
     var opened = false;
     var dodges = 0;

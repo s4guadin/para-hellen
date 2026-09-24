@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=3">
+  <link rel="stylesheet" href="css/styles.css?v=4">
 </head>
 <body>
   <div class="bg-layers" aria-hidden="true">
@@ -19,7 +19,22 @@
     <div class="vignette"></div>
   </div>
 
-  <main class="stage" id="stage"></main>
+  <main class="stage" id="stage">
+    <div class="stage-inner letter-stage">
+      <p class="sub-inline">Oi, minha princesa! ❤️</p>
+      <div class="envelope" id="mainEnvelope" aria-hidden="true">
+        <div class="env-back"></div>
+        <div class="env-letter"><span class="env-letter-text">Para a minha princesa ❤️</span></div>
+        <div class="env-flap"></div>
+        <div class="env-seal">❤</div>
+      </div>
+      <p class="letter-ask">Você quer abrir a carta?</p>
+      <div class="btn-row" id="letterBtns">
+        <button class="btn btn-primary" id="btnYes">SIM ❤️</button>
+        <button class="btn btn-ghost no-btn" id="btnNo">NÃO 🙈</button>
+      </div>
+    </div>
+  </main>
 
   <button class="music-btn" id="musicToggle" aria-label="Tocar música" aria-pressed="false" title="Tocar música">
     <span class="music-icon">&#9835;</span>
@@ -31,14 +46,14 @@
     <div class="noscript-card">Ative o JavaScript para abrir sua cartinha. &#128150;</div>
   </noscript>
 
-  <script src="js/content.js?v=3"></script>
-  <script src="js/effects.js?v=3"></script>
-  <script src="js/music.js?v=3"></script>
-  <script src="js/app.js?v=3"></script>
-  <script src="js/stage-letter.js?v=3"></script>
-  <script src="js/stage-declaration.js?v=3"></script>
-  <script src="js/stage-cards.js?v=3"></script>
-  <script src="js/stage-proposal.js?v=3"></script>
-  <script src="js/init.js?v=3"></script>
+  <script src="js/content.js?v=4"></script>
+  <script src="js/effects.js?v=4"></script>
+  <script src="js/music.js?v=4"></script>
+  <script src="js/app.js?v=4"></script>
+  <script src="js/stage-letter.js?v=4"></script>
+  <script src="js/stage-declaration.js?v=4"></script>
+  <script src="js/stage-cards.js?v=4"></script>
+  <script src="js/stage-proposal.js?v=4"></script>
+  <script src="js/init.js?v=4"></script>
 </body>
 </html>

@@ -5,5 +5,5 @@
 
   FX.makeStars(document.getElementById('stars'), 90);
   FX.startFloatingHearts(document.getElementById('heartsLayer'));
-  window.App.go('letter');
+  window.App.boot('letter');
 })();
