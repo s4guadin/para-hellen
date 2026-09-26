@@ -19,23 +19,43 @@
 
   var playing = false;
 
+  function startPlayback() {
+    if (playing) return;
+    var p = audio.play();
+    if (p && p.then) {
+      p.then(function () {
+        playing = true;
+        updateBtn();
+      }).catch(function (err) {
+        console.warn('Autoplay bloqueado pelo navegador:', err && err.message);
+      });
+    } else {
+      playing = true;
+      updateBtn();
+    }
+  }
+
+  startPlayback();
+
+  var resumeEvents = ['pointerdown', 'touchstart', 'keydown'];
+  function onFirstInteraction() {
+    if (!playing) {
+      startPlayback();
+    }
+    resumeEvents.forEach(function (name) {
+      document.removeEventListener(name, onFirstInteraction);
+    });
+  }
+  resumeEvents.forEach(function (name) {
+    document.addEventListener(name, onFirstInteraction);
+  });
+
   btn.addEventListener('click', function () {
     if (playing) {
       audio.pause();
       playing = false;
     } else {
-      var p = audio.play();
-      if (p && p.then) {
-        p.then(function () {
-          playing = true;
-          updateBtn();
-        }).catch(function (err) {
-          console.warn('Nao foi possivel tocar a musica:', err && err.message);
-        });
-      } else {
-        playing = true;
-        updateBtn();
-      }
+      startPlayback();
       return;
     }
     updateBtn();

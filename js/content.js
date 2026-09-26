@@ -86,7 +86,7 @@ window.CONTENT = {
   },
 
   music: {
-    src: "assets/music/romantic.mp3",
+    src: "assets/music/musica.mp3",
     title: "Nossa música"
   }
 };
