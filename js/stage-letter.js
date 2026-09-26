@@ -122,7 +122,7 @@
       }, 1550);
 
       setTimeout(function () {
-        App.go('declaration');
+        App.go('birthday');
       }, 2650);
     }
 

@@ -9,6 +9,20 @@ window.CONTENT = {
     }
   },
 
+  birthday: {
+    emoji: "🎂✨🎉",
+    title: "Feliz aniversário, minha princesa!",
+    continueLabel: "ABRIR MINHA CARTINHA 💌",
+    lines: [
+      "Hoje é um dia muito especial: o seu dia!",
+      "Queria começar te desejando toda a felicidade do mundo, porque é isso que você merece.",
+      "Que esse novo ciclo venha cheio de alegria, saúde, sonhos realizados e muitos momentos bons.",
+      "Que a sua companhia continue tornando tudo melhor, porque pra mim ela já faz isso todos os dias.",
+      "Nunca se esqueça de como você é incrível, única e especial.",
+      "Feliz aniversário, minha princesa! Que você sorria muito hoje (e sempre). ❤️"
+    ]
+  },
+
   declaration: {
     speed: 14,
     pauseBetween: 420,
