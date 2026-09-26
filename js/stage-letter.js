@@ -99,6 +99,9 @@
     function openLetter() {
       if (opened) return;
       opened = true;
+      if (window.PinkyMusic) {
+        window.PinkyMusic.start();
+      }
       yesBtn.disabled = true;
       noBtn.disabled = true;
       btnRow.classList.add('fade-out');

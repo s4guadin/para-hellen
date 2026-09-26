@@ -78,4 +78,11 @@
       icon.innerHTML = '&#128263;';
     }
   });
+
+  global.PinkyMusic = {
+    start: startPlayback,
+    isPlaying: function () {
+      return playing;
+    }
+  };
 })(window);
