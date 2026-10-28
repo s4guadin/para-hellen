@@ -21,7 +21,7 @@
 
     function wireNext() {
       document.getElementById('albumNext').addEventListener('click', function () {
-        App.go('proposal');
+        App.go('final');
       });
     }
 

@@ -73,30 +73,14 @@ window.CONTENT = {
     ]
   },
 
-  proposal: {
-    greet: "Hellen, minha princesa... ❤️",
-    lead: "Eu tenho uma última perguntinha para te fazer...",
-    question: "Você quer namorar comigo?",
-    yes: "SIM ❤️",
-    no: "NÃO 🙈"
-  },
-
-  yesMessage: {
+  final: {
     lines: [
-      "AAAAH! ❤️",
-      "Você acabou de deixar alguém muito feliz, minha princesa!",
-      "Obrigado por aceitar compartilhar esse sentimento comigo.",
-      "Que esse seja o começo de uma história muito especial para nós.",
-      "Eu gosto muito de você, Hellen. ❤️"
-    ]
-  },
-
-  noMessage: {
-    lines: [
-      "Tudo bem, minha princesa. ❤️",
-      "Obrigado por ter chegado até aqui e por ter lido essa cartinha.",
-      "Espero que ela tenha conseguido arrancar um sorriso seu."
-    ]
+      "Obrigado por chegar até aqui, minha princesa. ❤️",
+      "Fiz esse cantinho pensando em você, em cada detalhe.",
+      "Espero que ele tenha conseguido arrancar pelo menos um sorriso seu.",
+      "Você é muito especial pra mim, e isso não muda nunca. ❤️"
+    ],
+    restartLabel: "ver o começo de novo"
   },
 
   music: {
